@@ -1,8 +1,9 @@
 import './App.css';
-
+import Home from './Home/Home'
 function App() {
   return (
     <div className="App">
+      <Home className="App-header" />
       <header className="App-header">
         <img src="images/dwwm_1.png" className="App-logo" alt="logo" />
         <p>TP React Développeur Web et Web Mobile</p>
