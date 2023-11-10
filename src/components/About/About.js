@@ -1,5 +1,4 @@
 //*** fichier About.js ***
-
 import './About.css';
 
 function About() {
