@@ -1,19 +1,21 @@
 import './App.css';
 import Home from './Home/Home'
-import App from './About/About';
-import App from './components/Layout/Layout'; 
+import About from './About/About';
+import Layout from './components/Layout/Layout';
+import Search from './Search/Search';
+import List from './List/List';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <Home />
       <Routes>
-      <Route path="/" element= {<Layout />} />
-      <Route index element={<Home />} />
-        <Route path="/about" element={<About />} /> 
-      </Routes>
-    </div>
-  );
-}
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+        </Route>
 
-export default App;
+          <Route path="/Search" element={<Search />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/List/:data" element={<List />} />
+
+      </Routes>
+  );
+} 

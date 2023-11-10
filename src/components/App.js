@@ -14,11 +14,7 @@ function App() {
   return (
     <div className="App">
       <Home animate={animation} />
-      <button
-        className="App-button"
-        onClick={toggleAnimation}>
-        Modifier l’animation
-      </button>
+      <button className="App-button" onClick={toggleAnimation}>  Modifier l’animation</button>
     </div>
   );
 }

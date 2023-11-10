@@ -1,4 +1,5 @@
 //*** fichier About.js ***
+import { useState } from 'react';
 import './About.css';
 
 function About() {
